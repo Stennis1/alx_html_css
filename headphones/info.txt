@@ -1,0 +1,10 @@
+---
+## Notice
+This folder was initially created to pass a check.
+
+Note that to publish a site using GitHub pages, all files were moved out of this folder [headphones] to the root directory.
+
+
+Visit this site using url: 
+-(https://stennis1.github.io/alx_html_css/)
+---
