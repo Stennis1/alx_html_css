@@ -100,33 +100,9 @@ body {
 }
 
 .hero-footer {
-    font-style: italic;
     color: var(--light-text);
     line-height: 1.5;
-}
-
-/* Mobile Device Responsiveness */
-@media (max-width: 700px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: rgba(0, 0, 0, 0.3);
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 200px;
-        padding: 20px;
-        border-radius: 10px;
-        z-index: 1000;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
+    font-size: 1.1rem;
 }
 
 .services {
@@ -176,4 +152,173 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     opacity: 0.8;
+}
+
+.results-section {
+    background: url("/hero-images/headphones_hero_2.jpg") no-repeat center center/cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: var(--light-text);
+    position: relative;
+}
+
+.results-section h2 {
+    font-size: 2rem;
+    margin: 50px;
+}
+
+.results-intro {
+    color: var(--light-text);
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.results-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.results-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pentagon {
+    background: url(./hero-images/pentagone.png) no-repeat center center/contain;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.pentagon .percent {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--light-text);
+}
+
+.pentagon p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    color: var(--light-text);
+}
+
+.contact-us {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--light-text);
+}
+
+.contact-us h2 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.contact-form input {
+    width: 100;
+    padding: 12px 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-color: grey;
+    color: black;
+    font-size: 1rem;
+    outline: none;
+    font-weight: bolder;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form input:focus {
+    border-color: var(--primary-color);
+    transform: scale(1.02);
+}
+
+.submit-btn {
+    margin-top: 20px;
+    background: var(--primary-color);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.submit-btn:hover {
+    background-color: #e04a4e;
+    transform: translateY(-2px);
+}
+
+.footer-container {
+    padding: 50px;
+}
+
+.footer-body {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-icons {
+    font-size: 2rem;
+    display: flex;
+    gap: 25px;
+}
+
+.footnote {
+    margin-top: 50px;
+    text-align: center;
+    opacity: 0.2;
+}
+
+/* Mobile Device Responsiveness */
+@media (max-width: 700px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 1000;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
 }

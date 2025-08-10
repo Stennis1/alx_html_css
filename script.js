@@ -22,4 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     });
+
+    document.querySelector('.contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert("Thanks for contacting us! We'll reply soon.");
+        this.reset();
+    });
 });
